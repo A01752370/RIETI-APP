@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.rieti.app-debug-37:/drawable_bg_card.xml.flat",
+        "source": "com.rieti.app-main-39:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_formulario_reporte.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_formulario_reporte.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/drawable_bg_input.xml.flat",
+        "source": "com.rieti.app-main-39:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_seguimiento.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_seguimiento.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_registro.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_registro.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/drawable_bg_chip.xml.flat",
+        "source": "com.rieti.app-main-39:/drawable/bg_chip.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_reportes_list.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_reportes_list.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_confirmacion.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_confirmacion.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_login.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_item_reporte.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/item_reporte.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_splash.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/layout_activity_home.xml.flat",
+        "source": "com.rieti.app-main-39:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/drawable_bg_button_teal.xml.flat",
+        "source": "com.rieti.app-main-39:/drawable/bg_button_teal.xml"
+    },
+    {
+        "merged": "com.rieti.app-debug-37:/drawable_circle_status.xml.flat",
+        "source": "com.rieti.app-main-39:/drawable/circle_status.xml"
+    }
+]

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvBienvenida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bienvenid@\nNombre"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text_dark" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="🔍  Buscar folios..."
+                android:background="@drawable/bg_input"
+                android:padding="10dp"
+                android:enabled="false" />
+
+            <!-- Tarjeta: total de reportes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/tvTituloReportes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mis Reportes Creados"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalReportes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark" />
+            </LinearLayout>
+
+            <!-- Tarjeta: por estatus (dona simplificada -> lista con colores) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Por estatus"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Círculo decorativo simple en vez de gráfica de dona real -->
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/circle_status"
+                    android:backgroundTint="@color/purple_status" />
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:text="●  Concluidos" android:textColor="@color/purple_status" android:textSize="12sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                    <TextView android:text="●  En Seguimiento" android:textColor="@color/pink_accent" android:textSize="12sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <TextView android:text="●  Registrados" android:textColor="@color/teal_primary" android:textSize="12sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                    <TextView android:text="●  En Revisión" android:textColor="@color/purple_light" android:textSize="12sp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Tarjeta: por mes (barras simples con vistas) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card"
+                android:padding="16dp"
+                android:layout_marginTop="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Por mes"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="bottom">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="40dp" android:background="@color/purple_light" android:layout_marginEnd="10dp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="80dp" android:background="@color/purple_status" android:layout_marginEnd="10dp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="25dp" android:background="@color/purple_light" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:text="Junio" android:textSize="11sp" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                    <TextView android:text="Julio" android:textSize="11sp" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                    <TextView android:text="Agosto" android:textSize="11sp" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnHacerReporte"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="18dp"
+                android:text="+ Hacer reporte"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_teal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barra inferior simple -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/card_white">
+
+        <TextView
+            android:id="@+id/tabCasos"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="📄  Casos"
+            android:textColor="@color/teal_primary" />
+
+        <TextView
+            android:id="@+id/tabPerfil"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="👤  Perfil"
+            android:textColor="@color/text_gray" />
+    </LinearLayout>
+
+</LinearLayout>

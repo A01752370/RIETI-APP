@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EtiquetaSeccion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <!-- Chip visual simple: un TextView con fondo redondeado. No es un componente funcional real,
+         es solo estética para esta etapa (sin lógica de selección múltiple todavía) -->
+    <style name="ChipNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ChipSeleccionado" parent="ChipNormal">
+        <item name="android:background">@drawable/bg_button_teal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

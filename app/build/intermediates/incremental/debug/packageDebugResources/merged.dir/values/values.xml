@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_light">#F5F5F7</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="chip_selected">#127C82</color>
+    <color name="chip_unselected">#EAEAEA</color>
+    <color name="green_check">#4CAF50</color>
+    <color name="pink_accent">#E27DA0</color>
+    <color name="purple_light">#C7B4DE</color>
+    <color name="purple_status">#8E6FB0</color>
+    <color name="teal_dark">#0E6469</color>
+    <color name="teal_primary">#127C82</color>
+    <color name="text_dark">#222222</color>
+    <color name="text_gray">#7A7A7A</color>
+    <style name="ChipNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="ChipSeleccionado" parent="ChipNormal">
+        <item name="android:background">@drawable/bg_button_teal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="EtiquetaSeccion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+    <style name="Theme.RIETI" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryDark">@color/teal_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="android:windowBackground">@color/bg_light</item>
+    </style>
+</resources>

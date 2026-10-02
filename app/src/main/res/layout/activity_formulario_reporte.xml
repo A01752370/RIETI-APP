@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Encabezado con flecha de regreso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textSize="22sp"
+                android:paddingEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo Reporte"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_dark" />
+        </LinearLayout>
+
+        <TextView style="@style/EtiquetaSeccion" android:text="Ubicación" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+            <TextView android:id="@+id/chipUbicacionActual" style="@style/ChipSeleccionado" android:text="Usar mi ubicación actual" />
+        </LinearLayout>
+        <TextView android:id="@+id/chipMapa" style="@style/ChipNormal" android:layout_marginTop="8dp" android:text="Marcar punto en el mapa" />
+        <TextView android:id="@+id/chipDireccion" style="@style/ChipNormal" android:layout_marginTop="8dp" android:text="Escribir dirección o referencia" />
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="¿Cuántas niñas, niños o adolescentes observaste?" />
+        <LinearLayout android:id="@+id/grupoCantidad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView style="@style/ChipSeleccionado" android:text="1" />
+            <TextView style="@style/ChipNormal" android:text="2" />
+            <TextView style="@style/ChipNormal" android:text="3" />
+            <TextView style="@style/ChipNormal" android:text="4" />
+            <TextView style="@style/ChipNormal" android:text="5+" />
+            <TextView style="@style/ChipNormal" android:text="No sé" />
+        </LinearLayout>
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="Edad aproximada" />
+        <LinearLayout android:id="@+id/grupoEdad" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView style="@style/ChipSeleccionado" android:text="0-5" />
+            <TextView style="@style/ChipNormal" android:text="6-11" />
+            <TextView style="@style/ChipNormal" android:text="12-14" />
+            <TextView style="@style/ChipNormal" android:text="15-17" />
+            <TextView style="@style/ChipNormal" android:text="No sé" />
+        </LinearLayout>
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="¿Qué estaban haciendo?" />
+        <!-- Usamos LinearLayouts simples en filas para no depender de librerías extra de chips -->
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView style="@style/ChipSeleccionado" android:text="Mendicidad forzada" />
+            <TextView style="@style/ChipNormal" android:text="Trabajo peligroso" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView style="@style/ChipNormal" android:text="Trata de personas" />
+            <TextView style="@style/ChipNormal" android:text="Explotación sexual" />
+        </LinearLayout>
+        <TextView style="@style/ChipNormal" android:layout_marginTop="8dp" android:text="Otra situación" />
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="¿Observaste alguna situación de riesgo?" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <TextView style="@style/ChipSeleccionado" android:text="Sí" />
+            <TextView style="@style/ChipNormal" android:text="No" />
+            <TextView style="@style/ChipNormal" android:text="No sé" />
+        </LinearLayout>
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="Descripción del caso (opcional)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top|start"
+            android:hint="Escribe detalladamente lo ocurrido o qué observaste..."
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView style="@style/EtiquetaSeccion" android:layout_marginTop="20dp" android:text="Adjuntar imagen" />
+        <TextView
+            android:id="@+id/btnSubirFoto"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="📷  Subir foto o evidencia"
+            android:textColor="@color/teal_primary"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_chip"
+            android:text="⚠ Evita tomar fotografías que pongan en riesgo a niñas, niños o adolescentes. No confrontes a las personas involucradas ni te expongas para obtener evidencia."
+            android:textSize="12sp"
+            android:textColor="@color/text_gray" />
+
+        <Button
+            android:id="@+id/btnEnviarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:text="Enviar reporte"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_button_teal" />
+
+    </LinearLayout>
+</ScrollView>

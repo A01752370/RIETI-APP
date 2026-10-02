@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_primary">#127C82</color>
+    <color name="teal_dark">#0E6469</color>
+    <color name="pink_accent">#E27DA0</color>
+    <color name="purple_status">#8E6FB0</color>
+    <color name="purple_light">#C7B4DE</color>
+    <color name="bg_light">#F5F5F7</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_dark">#222222</color>
+    <color name="text_gray">#7A7A7A</color>
+    <color name="green_check">#4CAF50</color>
+    <color name="chip_selected">#127C82</color>
+    <color name="chip_unselected">#EAEAEA</color>
+</resources>

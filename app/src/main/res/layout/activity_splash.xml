@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light"
+    android:padding="28dp">
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="RIETI"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="Ruta Intermunicipal para la\nErradicación del Trabajo Infantil"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:textColor="@color/text_gray" />
+
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo quieres realizar el reporte?"
+        android:textColor="@color/text_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoReporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbAnonimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reporte anónimo"
+            android:textColor="@color/text_dark"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbSeguimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Reporte con seguimiento"
+            android:textColor="@color/text_dark" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="Continuar"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_button_teal" />
+
+</LinearLayout>
